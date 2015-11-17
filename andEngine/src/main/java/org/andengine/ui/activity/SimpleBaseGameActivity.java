@@ -39,7 +39,7 @@ public abstract class SimpleBaseGameActivity extends BaseGameActivity {
 	protected abstract Scene onCreateScene();
 
 	@Override
-	public final void onCreateResources(final OnCreateResourcesCallback pOnCreateResourcesCallback) throws IOException {
+	public void onCreateResources(final OnCreateResourcesCallback pOnCreateResourcesCallback) throws IOException {
 		this.onCreateResources();
 
 		pOnCreateResourcesCallback.onCreateResourcesFinished();
